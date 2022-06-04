@@ -4,7 +4,29 @@
     <meta charset="UTF-8">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hover.css">
     <script src="script.js"></script>
+
+    <style>
+        img {
+            width: 30%;
+            height: 40%;
+            min-height: 200px;
+            object-fit: cover;
+            border-radius: 25px;
+        }
+        .projectContainer {
+            display: flex; 
+            flex-direction: row;
+            flex-wrap: row;
+            margin: 0 -5px;
+        }
+        .projects {
+            margin: 0 5px;
+        }
+
+    </style>
+
   </head>
   <body>
     <div id="content">
@@ -16,6 +38,12 @@
             <li><a href="about.html">About</a></li>
         </ul>
         <h1>My Projects</h1>
+        <div class = "projectContainer"> 
+            <div class = "projects">
+                    <img src="./images/tictactoe.jpg"/>
+                    <img src="./images/rps.jpg"/>
+            </div>
+        </div>
     </div>
   </body>
 </html>

@@ -5,6 +5,22 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <style>
+        .circle {
+            border:3px solid rgb(255, 255, 255);    
+            height:100px;
+            border-radius:50%;
+            -moz-border-radius:50%;
+            -webkit-border-radius:50%;
+            width:100px;
+            position:relative; 
+            left: 250px; 
+            bottom: 200px;
+        }
+        img {
+            border-radius: 50%;
+        }
+    </style>
   </head>
   <body>
     <div id="content">
@@ -15,15 +31,16 @@
             <li><a href="contact.html">Contact</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
-        <h1>Evan's Portfolio</h1>
-        <img src="./images/derp-ok.png" 
-        width="400" 
-        height="400"/>
-        <p>This is my portfolio.</p>
-        <p>Click <a href="/hello">here</a> to see content created by server code.</p>
+        <h2>Evan Lin</h2>
+        <p> Digital Craftsman (Artist | Developer)</p>
+        <br>
         <p>Click here to get a random message:</p>
         <button onclick="addRandomGreeting()">Hello, I am: </button>
         <div id="greeting-container"></div>
+        <div class="circle"><img src="./images/derp-ok.png" 
+            height = "100" 
+            alt="Profile">
+        </div>
     </div>
   </body>
 </html>

@@ -6,10 +6,6 @@ body {background-color: #6477ac;}
   width: 650px;
 }
 
-#greeting-container {
-  margin-top: 20px;
-}
-
 ul {
     list-style-type: none;
     margin: 1px;
@@ -40,6 +36,7 @@ li a:hover {
 }
 
 #greeting-container {
+    margin-top: 20px;
     color: blue;
     font-size: 30px;
     font-weight: bold;

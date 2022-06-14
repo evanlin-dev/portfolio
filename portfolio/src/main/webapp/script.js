@@ -26,3 +26,49 @@ function addRandomGreeting() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
+
+/** Fetches the current date from the server and adds it to the page. */
+async function showServerTime() {
+    const responseFromServer = await fetch('/date');
+    const textFromResponse = await responseFromServer.text();
+  
+    const dateContainer = document.getElementById('date-container');
+    dateContainer.innerText = textFromResponse;
+}
+
+/** Fetches page views and adds it to the page. */
+async function showPageViews() {
+    const responseFromServer = await fetch('/page-views');
+    const textFromResponse = await responseFromServer.text();
+    
+    const pageContainer = document.getElementById('page-container');
+    pageContainer.innerText = textFromResponse;
+}
+
+/** Fetches stats from the server and adds them to the page. */
+async function getServerStats() {
+    const responseFromServer = await fetch('/server-stats');
+    // The json() function returns an object that contains fields that we can
+    // reference to create HTML.
+    const stats = await responseFromServer.json();
+  
+    const statsListElement = document.getElementById('server-stats-container');
+    statsListElement.innerHTML = '';
+  
+    statsListElement.appendChild(
+        createListElement('Start time: ' + stats.startTime));
+    statsListElement.appendChild(
+        createListElement('Current time: ' + stats.currentTime));
+    statsListElement.appendChild(
+        createListElement('Max memory: ' + stats.maxMemory));
+    statsListElement.appendChild(
+        createListElement('Used memory: ' + stats.usedMemory));
+  }
+  
+/** Creates an <li> element containing text. */
+function createListElement(text) {
+    const liElement = document.createElement('li');
+    liElement.innerText = text;
+    return liElement;
+}
+  

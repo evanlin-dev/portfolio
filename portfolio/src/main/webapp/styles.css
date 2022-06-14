@@ -1,0 +1,269 @@
+.content{
+    display:flex;
+    flex-direction: row;
+}
+
+a { 
+    text-decoration: none; 
+    color:#96989d;
+}
+
+@font-face{
+    font-family: discord;
+    src: url(Montserrat-Regular.ttf);
+}
+
+ul.messages{
+    position: relative;
+    list-style-image: url(./images/profile.png);
+    top: 480px;
+    margin: auto 0 0 400px;
+}
+
+ul.images{
+    position: relative;
+    list-style-image: url(./images/profile.png);
+    top: 100px;
+    margin: auto 0 0 400px;
+}
+
+li{ 
+    padding: 5px;
+    font-family: discord;
+    color: #FFFFFF;
+}
+
+#middleRect{
+    position: absolute;
+    width: 1320px;
+    height: 975px;
+    left: 331px;
+    top: 0px;
+    z-index: -5;
+
+    background: #36393F;
+}
+
+#rightRect{
+    position: absolute;
+    width: 277px;
+    height: 975px;
+    left: 1643px;
+    top: 0px;
+
+    background: #2F3136;
+}
+
+#leftRect{   
+    position: absolute;
+    width: 259px;
+    height: 975px;
+    left: 72px;
+    top: 0px;
+    
+    background: #2F3136;
+}
+
+#sideBar{
+    position: absolute;
+    width: 73px;
+    height: 975px;
+    left: 0px;
+    top: 0px;
+
+    background: #202225;
+}
+
+#bgImg{
+    position: absolute;
+    width: 258px;
+    height: 145px;
+    left: 73px;
+    top: 0px;
+
+    background: url(./images/background.png);
+}
+
+#iconMain{
+    position: absolute;
+    width: 53px;
+    height: 53px;
+    left: 9px;
+    top: 15px;
+
+    background: url(./images/iconMain.png);
+}
+
+#iconServer{
+    position: absolute;
+    width: 51px;
+    height: 53px;
+    left: 11px;
+    top: 83px;
+
+    background: url(./images/iconServer.png);
+    border-radius: 17px;
+}
+
+#discover{
+    position: absolute;
+    width: 53px;
+    height: 53px;
+    left: 9px;
+    top: 149px;
+
+    background: url(./images/discover.png);
+}
+
+#plus{
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 363px;
+    top: 925px;
+    z-index: 1;
+    background: url(./images/plus.png);
+}
+
+
+#serverName{
+    position: absolute;
+    width: 218px;
+    height: 18px;
+    left: 93px;
+    top: 17px;
+
+    font-family: discord;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 168.52%;
+
+    /* or 25px */
+
+    color: #FFFFFF;
+}
+
+#category{  
+    position: absolute;
+    width: 132px;
+    height: 30px;
+    left: 93px;
+    top: 159px;
+
+    font-family: discord;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 168.52%;
+
+    /* or 22px */
+
+    color:#96989d;
+}
+
+#channels{
+    position: absolute;
+    width: 141px;
+    height: 19px;
+    left: 100px;
+    top: 189px;
+
+    font-family: discord;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 168.52%;
+
+    /* or 25px */
+
+    color: #FFFFFF;
+}
+
+#chatboxText{
+    position: absolute;
+    width: 180px;
+    height: 19px;
+    left: 404px;
+    top: 923px;
+    z-index: 1;
+
+    font-family: discord;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 168.52%;
+
+    /* or 25px */
+
+    color: #696E74;
+}
+
+#role{
+    position: absolute;
+    width: 141px;
+    height: 19px;
+    left: 1685px;
+    top: 76px;
+
+    font-family: discord;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 168.52%;
+
+    /* or 22px */
+
+    color: #FFFFFF;
+}
+
+#userSide{
+    position: absolute;
+    width: 141px;
+    height: 19px;
+    left: 1730px;
+    top: 102px;
+
+    font-family: discord;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 168.52%;
+
+    /* or 22px */
+
+    color: #FFFFFF;
+}
+
+#profileSide{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: 1685px;
+    top: 102px;
+    background: url(./images/profileSide.png);
+}
+
+#chatbox{
+    position: absolute;
+    width: 1280px;
+    height: 50px;
+    left: 346px;
+    top: 910px;
+    background: #40444B;
+    border-radius: 13px;
+}
+
+#linkedin{
+    position: relative;
+    width: 706px;
+    height: 278px;
+    background: url(./images/self.png);
+}
+
+#github{
+    position: relative;
+    width: 538px;
+    height: 462px;
+    background: url(./images/github.png);
+}

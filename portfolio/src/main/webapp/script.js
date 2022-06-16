@@ -17,7 +17,7 @@
  */
 function addRandomGreeting() {
   const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+      ['a software engineer', 'an artist', 'chinese', 'from New York'];
 
   // Pick a random greeting.
   const greeting = greetings[Math.floor(Math.random() * greetings.length)];
@@ -26,3 +26,16 @@ function addRandomGreeting() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
+
+/** Creates a map and adds it to the page. */
+function createMap() {
+    const map = new google.maps.Map(
+        document.getElementById('map'),
+        {center: {lat: 40.76784423729127, lng: -73.9645300812535}, zoom: 16});
+
+    const marker = new google.maps.Marker({
+        position: {lat: 40.76784423729127, lng: -73.9645300812535},
+        map: map,});
+}
+  
+  

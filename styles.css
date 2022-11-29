@@ -20,10 +20,17 @@ ul.messages{
     margin: auto 0 0 400px;
 }
 
-ul.images{
+ul.images-messages{
     position: relative;
     list-style-image: url(./images/profile.png);
     top: 100px;
+    margin: auto 0 0 400px;
+}
+
+ul.images-projects{
+    position: relative;
+    list-style-image: url(./images/profile.png);
+    top: 250px;
     margin: auto 0 0 400px;
 }
 
@@ -266,4 +273,11 @@ li{
     width: 538px;
     height: 462px;
     background: url(./images/github.png);
+}
+
+#pokedex{
+    position: relative;
+    width: 840px;
+    height: 380px;
+    background: url(./images/pokedex.png);
 }
